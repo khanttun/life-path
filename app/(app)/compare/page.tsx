@@ -12,6 +12,7 @@ import {
 import { RiskBadge } from "@/components/risk-badge"
 import { RiskGauge } from "@/components/risk-gauge"
 import { OpportunityScore } from "@/components/opportunity-score"
+import { AIRecommendationBadge } from "@/components/ai-recommendation-badge"
 import {
   GraduationCap,
   Briefcase,
@@ -286,8 +287,11 @@ export default function ComparePage() {
             <div className="mt-0.5 flex size-10 items-center justify-center rounded-xl bg-primary-foreground/20">
               <Zap className="size-5" />
             </div>
-            <div>
-              <h3 className="text-lg font-semibold">AI Recommendation</h3>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <h3 className="text-lg font-semibold">AI Recommendation</h3>
+                <AIRecommendationBadge label="BETA" variant="warning" />
+              </div>
               <p className="mt-2 leading-relaxed text-primary-foreground/90">
                 <strong>Path A (Get a Degree)</strong> wins on long-term metrics: 47% higher income at Year 10
                 and 36% more accumulated wealth. However, <strong>Path B (Work Immediately)</strong> provides

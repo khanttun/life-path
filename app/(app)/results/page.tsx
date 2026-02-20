@@ -15,6 +15,9 @@ import { RiskBadge } from "@/components/risk-badge"
 import { RiskGauge } from "@/components/risk-gauge"
 import { ThailandHeatmap } from "@/components/thailand-heatmap"
 import { OpportunityScore } from "@/components/opportunity-score"
+import { PremiumInsights } from "@/components/premium-insights"
+import { LifeStabilityPulse } from "@/components/life-stability-pulse"
+import { AIRecommendationBadge } from "@/components/ai-recommendation-badge"
 import {
   Dialog,
   DialogContent,
@@ -240,9 +243,14 @@ function AIExplanation() {
   return (
     <div className="glass-card rounded-2xl overflow-hidden">
       <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-primary-foreground">
-        <div className="mb-3 flex items-center gap-2">
+        <div className="mb-3 flex items-center gap-3">
           <Info className="size-5" />
-          <h3 className="text-lg font-semibold">AI Decision Intelligence Report</h3>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <h3 className="text-lg font-semibold">AI Decision Intelligence Report</h3>
+              <AIRecommendationBadge variant="success" label="BETA" />
+            </div>
+          </div>
         </div>
         <p className="leading-relaxed text-primary-foreground/90">
           Based on your decision path of pursuing higher education, your income is projected to grow
@@ -344,6 +352,9 @@ export default function ResultsPage() {
       {/* Score Cards */}
       <ScoreCards />
 
+      {/* Life Stability Pulse */}
+      <LifeStabilityPulse />
+
       {/* Tabs for different views */}
       <Tabs defaultValue="projections" className="w-full">
         <TabsList className="glass-card w-full justify-start gap-1 rounded-xl p-1">
@@ -386,6 +397,9 @@ export default function ResultsPage() {
 
       {/* AI Explanation */}
       <AIExplanation />
+
+      {/* Premium Insights */}
+      <PremiumInsights />
 
       {/* Action buttons */}
       <div className="flex flex-col gap-3 sm:flex-row">
