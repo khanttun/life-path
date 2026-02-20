@@ -48,7 +48,7 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/50 glass-card-strong">
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 glass-card-strong bg-white">
       <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3">
           <LifePathLogo />
