@@ -10,6 +10,7 @@ import {
   GitBranch,
   GraduationCap,
   Shield,
+  Lock,
   Menu,
   X,
 } from "lucide-react"
@@ -35,6 +36,9 @@ const links = [
   { href: "/scenario", label: "Scenarios", icon: GitBranch },
   { href: "/scholarships", label: "Scholarships", icon: GraduationCap },
   { href: "/royal-path", label: "Royal Path", icon: Shield },
+  // premium/locked sections
+  { href: "/opportunities", label: "Opportunities", icon: Lock },
+  { href: "/premium", label: "Premium", icon: Lock },
 ]
 
 export function Navbar() {

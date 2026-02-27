@@ -16,7 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Lock, Sparkles, TrendingUp, Target, Zap, X } from "lucide-react"
+import { Lock, Sparkles, TrendingUp, Target, Zap, X, FileText, MapPin, Search, Shield } from "lucide-react"
 
 export function PremiumInsights() {
   const [isOpen, setIsOpen] = useState(false)
@@ -42,7 +42,7 @@ export function PremiumInsights() {
                   </span>
                 </CardTitle>
                 <CardDescription>
-                  Detailed 10-year wealth projections & personalized AI strategies
+                  Unlock advanced opportunity & career‑building tools for students and youth
                 </CardDescription>
               </div>
             </div>
@@ -90,7 +90,7 @@ export function PremiumInsights() {
           </Button>
 
           <p className="text-center text-xs text-muted-foreground">
-            Get 30 days free. Then 299 THB/month
+            Get 30 days free. Then 99THB/month
           </p>
         </CardContent>
       </Card>
@@ -116,70 +116,75 @@ export function PremiumInsights() {
           </DialogHeader>
 
           <div className="space-y-6">
-            {/* Feature 1 */}
+            {/* Opportunity & Premium features */}
             <div className="space-y-3 border-l-4 border-amber-400 pl-4">
               <div className="flex items-center gap-2">
-                <TrendingUp className="size-5 text-amber-600" />
-                <h3 className="font-semibold text-lg">10-Year Wealth Forecast</h3>
+                <FileText className="size-5 text-amber-600" />
+                <h3 className="font-semibold text-lg">Resume Gap Analysis</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Get detailed year-by-year financial projections based on your decision path. See exactly how your income, savings, and debt will evolve with monthly breakdowns and scenario comparisons.
+                Automatically compare your CV against ideal candidate profiles and uncover missing skills or experience that keep you from top internships or programs.
               </p>
-              <div className="bg-muted rounded-lg p-3 space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>Year 5 Projected Savings:</span>
-                  <span className="font-semibold">฿ 300,000</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Year 10 Income Increase:</span>
-                  <span className="font-semibold">+180% vs baseline</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Debt Freedom Date:</span>
-                  <span className="font-semibold">Year 7</span>
-                </div>
-              </div>
             </div>
 
-            {/* Feature 2 */}
+            <div className="space-y-3 border-l-4 border-amber-400 pl-4">
+              <div className="flex items-center gap-2">
+                <MapPin className="size-5 text-amber-600" />
+                <h3 className="font-semibold text-lg">Province Opportunity Map</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Interactive heatmap showing regional demand, survival costs and potential earnings—use it to decide where to study, intern, or start a business.
+              </p>
+            </div>
+
+            <div className="space-y-3 border-l-4 border-amber-400 pl-4">
+              <div className="flex items-center gap-2">
+                <Search className="size-5 text-amber-600" />
+                <h3 className="font-semibold text-lg">Smart Path Matcher</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Match your profile (skills, interests, GPA) to the best university programs and internships across Thailand with personalized fit and income estimates.
+              </p>
+            </div>
+
+            <div className="space-y-3 border-l-4 border-amber-400 pl-4">
+              <div className="flex items-center gap-2">
+                <FileText className="size-5 text-amber-600" />
+                <h3 className="font-semibold text-lg">CV Roast & Refine</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Upload your CV to receive AI-powered feedback: keyword optimization, ATS compatibility, and rewrite suggestions for stronger impact.
+              </p>
+            </div>
+
             <div className="space-y-3 border-l-4 border-amber-400 pl-4">
               <div className="flex items-center gap-2">
                 <Target className="size-5 text-amber-600" />
-                <h3 className="font-semibold text-lg">Personalized Strategies</h3>
+                <h3 className="font-semibold text-lg">Deep Internship Matcher</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Receive custom action plans tailored to your profile, including specific milestones, timeline recommendations, and government assistance programs you qualify for.
+                Advanced matching using cultural fit, career mobility and risk projections to find the ideal internship opportunities for you.
               </p>
-              <div className="bg-muted rounded-lg p-3 space-y-2 text-sm">
-                <div className="flex items-start gap-2">
-                  <span className="font-semibold text-amber-600">•</span>
-                  <span><strong>Month 1-3:</strong> Enroll in vocational training program</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="font-semibold text-amber-600">•</span>
-                  <span><strong>Month 4-6:</strong> Apply for 30-Baht healthcare & student subsidies</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="font-semibold text-amber-600">•</span>
-                  <span><strong>Month 12+:</strong> Start building emergency fund (45,000 THB)</span>
-                </div>
-              </div>
             </div>
 
-            {/* Feature 3 */}
             <div className="space-y-3 border-l-4 border-amber-400 pl-4">
               <div className="flex items-center gap-2">
                 <Zap className="size-5 text-amber-600" />
-                <h3 className="font-semibold text-lg">AI-Powered Coaching</h3>
+                <h3 className="font-semibold text-lg">Mock Interview Simulator</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Get real-time AI recommendations as your life circumstances change. The system monitors your progress and suggests optimizations to improve financial stability and career outcomes.
+                Practice realistic interview scenarios with AI-generated questions and get instant feedback on your responses and body language.
               </p>
-              <div className="bg-blue-50 border border-blue-200/30 rounded-lg p-3 text-sm">
-                <p className="text-blue-900">
-                  <strong>Current Recommendation:</strong> Your stress resilience score is 45/100. Building a 3-month emergency fund would boost this to 72/100 and provide crucial protection against unexpected income loss.
-                </p>
+            </div>
+
+            <div className="space-y-3 border-l-4 border-amber-400 pl-4">
+              <div className="flex items-center gap-2">
+                <Shield className="size-5 text-amber-600" />
+                <h3 className="font-semibold text-lg">Shadow Application Builder</h3>
               </div>
+              <p className="text-sm text-muted-foreground">
+                Generate professional cover letters and tailor applications quickly using AI templates based on real job postings or scholarship opportunities.
+              </p>
             </div>
 
             {/* CTA */}
